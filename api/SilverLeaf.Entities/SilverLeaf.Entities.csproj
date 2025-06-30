@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DTOs\Create\**" />
+    <Compile Remove="DTOs\Delete\**" />
+    <Compile Remove="DTOs\Read\**" />
+    <Compile Remove="DTOs\Update\**" />
+    <EmbeddedResource Remove="DTOs\Create\**" />
+    <EmbeddedResource Remove="DTOs\Delete\**" />
+    <EmbeddedResource Remove="DTOs\Read\**" />
+    <EmbeddedResource Remove="DTOs\Update\**" />
+    <None Remove="DTOs\Create\**" />
+    <None Remove="DTOs\Delete\**" />
+    <None Remove="DTOs\Read\**" />
+    <None Remove="DTOs\Update\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NEST" Version="7.4.1" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SilverLeaf.Common\SilverLeaf.Common.csproj" />
+  </ItemGroup>
+
+</Project>

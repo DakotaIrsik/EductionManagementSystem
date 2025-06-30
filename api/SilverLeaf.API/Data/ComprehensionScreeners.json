@@ -1,0 +1,62 @@
+﻿[
+  {
+    "Preface": "There was a little red hen. She found an apple seed. The little red hen said \"Who will plant this apple seed?\"",
+    "SecondPreface": "\"Not I,\" said the duck. \"Not I,\" said the dog. \"Not I,\" said the cat. \"Then I will plant the apple seed,\" said the little red hen.",
+    "Order": 2,
+    "Question": "What did the little red hen find?",
+    "Answers": "a.) a seed|b.) a cat|c.) a hen|d.) a duck",
+    "CorrectAnswer": "a.) a seed",
+    "Image": "https://www.silverleafschool.com/documents/screener/images/comprehension/hen.png",
+    "SecondImage": "https://www.silverleafschool.com/documents/screener/images/comprehension/duckdogcat.png"
+  },
+  {
+    "Preface": "There was a little red hen. She found an apple seed. The little red hen said \"Who will plant this apple seed?\"",
+    "SecondPreface": "\"Not I,\" said the duck. \"Not I,\" said the dog. \"Not I,\" said the cat. \"Then I will plant the apple seed,\" said the little red hen.",
+    "Order": 3,
+    "Question": "Who will plant the apple seed?",
+    "Answers": "a.) a seed|b.) a cat|c.) a hen|d.) a duck",
+    "CorrectAnswer": "c.) a hen",
+    "Image": "https://www.silverleafschool.com/documents/screener/images/comprehension/hen.png",
+    "SecondImage": "https://www.silverleafschool.com/documents/screener/images/comprehension/duckdogcat.png"
+  },
+  {
+    "Preface": "There was a little red hen. She found an apple seed. The little red hen said \"Who will plant this apple seed?\"",
+    "SecondPreface": "\"Not I,\" said the duck. \"Not I,\" said the dog. \"Not I,\" said the cat. \"Then I will plant the apple seed,\" said the little red hen.",
+    "Order": 4,
+    "Question": "What color is the dog?",
+    "Answers": "a.) a seed|b.) a cat|c.) a hen|d.) a duck",
+    "CorrectAnswer": "a.) a seed",
+    "Image": "https://www.silverleafschool.com/documents/screener/images/comprehension/hen.png",
+    "SecondImage": "https://www.silverleafschool.com/documents/screener/images/comprehension/duckdogcat.png"
+  },
+  {
+    "Preface": "There was a little red hen. She found an apple seed. The little red hen said \"Who will plant this apple seed?\"",
+    "SecondPreface": "\"Not I,\" said the duck. \"Not I,\" said the dog. \"Not I,\" said the cat. \"Then I will plant the apple seed,\" said the little red hen.",
+    "Order": 5,
+    "Question": "Why did the duck, the dog, and the cat not want to plant the seed?",
+    "Answers": "",
+    "CorrectAnswer": "",
+    "Image": "https://www.silverleafschool.com/documents/screener/images/comprehension/hen.png",
+    "SecondImage": "https://www.silverleafschool.com/documents/screener/images/comprehension/duckdogcat.png"
+  },
+  {
+    "Preface": "There was a little red hen. She found an apple seed. The little red hen said \"Who will plant this apple seed?\"",
+    "SecondPreface": "\"Not I,\" said the duck. \"Not I,\" said the dog. \"Not I,\" said the cat. \"Then I will plant the apple seed,\" said the little red hen.",
+    "Order": 6,
+    "Question": "Would you help?",
+    "Answers": "",
+    "CorrectAnswer": "",
+    "Image": "https://www.silverleafschool.com/documents/screener/images/comprehension/hen.png",
+    "SecondImage": "https://www.silverleafschool.com/documents/screener/images/comprehension/duckdogcat.png"
+  },
+  {
+    "Preface": "There was a little red hen. She found an apple seed. The little red hen said \"Who will plant this apple seed?\"",
+    "SecondPreface": "\"Not I,\" said the duck. \"Not I,\" said the dog. \"Not I,\" said the cat. \"Then I will plant the apple seed,\" said the little red hen.",
+    "Order": 7,
+    "Question": "Why would you help / Why would you not help?",
+    "Answers": "",
+    "CorrectAnswer": "",
+    "Image": "https://www.silverleafschool.com/documents/screener/images/comprehension/hen.png",
+    "SecondImage": "https://www.silverleafschool.com/documents/screener/images/comprehension/duckdogcat.png"
+  }
+]

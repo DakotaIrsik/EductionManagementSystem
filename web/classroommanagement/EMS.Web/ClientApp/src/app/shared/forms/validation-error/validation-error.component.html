@@ -1,0 +1,8 @@
+   <small *ngIf="validatedControl.invalid && (validatedControl.dirty || validatedControl.touched)" class="text-danger">
+     <div *ngIf="validatedControl.errors.required">
+       Required
+     </div>
+     <div *ngIf="validatedControl.errors.validationError">
+       {{validatedControl.errors.validationError.message.toString()}}
+     </div>
+    </small>

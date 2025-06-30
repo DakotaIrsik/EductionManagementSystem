@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Age" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>Assessor</value>
+  </data>
+  <data name="ContinueScreener" xml:space="preserve">
+    <value>Continue Screener</value>
+  </data>
+  <data name="CurrentStudent" xml:space="preserve">
+    <value>Current Student</value>
+  </data>
+  <data name="EnglishName" xml:space="preserve">
+    <value>English Name</value>
+  </data>
+  <data name="GettingStartedMessage" xml:space="preserve">
+    <value>Tap the Hamburger to get started</value>
+  </data>
+  <data name="Grade" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="Issue" xml:space="preserve">
+    <value>Issue</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Login Error</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="MenuItemPendingScreeners" xml:space="preserve">
+    <value>Pending Screeners</value>
+  </data>
+  <data name="MenuItemLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="MenuItemLogout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="MenuItemResumeScreener" xml:space="preserve">
+    <value>Resume Screener</value>
+  </data>
+  <data name="MenuItemScreenerRegistration" xml:space="preserve">
+    <value>Register new Student</value>
+  </data>
+  <data name="MenuItemSettings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="NetworkError" xml:space="preserve">
+    <value>Your device is currently unable to access the internet; Please try again later</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="PageTitleLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="PageTitlePendingScreeners" xml:space="preserve">
+    <value>Pending Screeners</value>
+  </data>
+  <data name="PageTitlePhonics" xml:space="preserve">
+    <value>Phonics</value>
+  </data>
+  <data name="PageTitleScreenerRegistration" xml:space="preserve">
+    <value>Enter Student Information</value>
+  </data>
+  <data name="PageTitleSettings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="UsernamePasswordError" xml:space="preserve">
+    <value>You have entered an incorrect Username or Password</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="NoPendingStudentScreenersMessage" xml:space="preserve">
+    <value>No pending screeners</value>
+  </data>
+  <data name="PageTitleComprehension" xml:space="preserve">
+    <value>Comprehension</value>
+  </data>
+  <data name="PageTitleFunctionalOral" xml:space="preserve">
+    <value>Functional Oral</value>
+  </data>
+  <data name="SelectStudentLabel" xml:space="preserve">
+    <value>Select a student above to get started</value>
+  </data>
+  <data name="SwipeLeft" xml:space="preserve">
+    <value>Swipe left</value>
+  </data>
+  <data name="SwipeRight" xml:space="preserve">
+    <value>Swipe right</value>
+  </data>
+  <data name="AreasForImprovement" xml:space="preserve">
+    <value>Areas for improvement</value>
+  </data>
+  <data name="AreasOfStrength" xml:space="preserve">
+    <value>Areas of strength</value>
+  </data>
+  <data name="ExtraInformationGained" xml:space="preserve">
+    <value>Extra information gained</value>
+  </data>
+  <data name="CompleteScreener" xml:space="preserve">
+    <value>Complete Screener</value>
+  </data>
+  <data name="GetCourseSuggestion" xml:space="preserve">
+    <value>Get Course Suggestion</value>
+  </data>
+  <data name="PageTitleCompleteScreener" xml:space="preserve">
+    <value>Complete Screener</value>
+  </data>
+  <data name="ResumeComprehension" xml:space="preserve">
+    <value>Resume comprehension</value>
+  </data>
+  <data name="ResumeOral" xml:space="preserve">
+    <value>Resume oral</value>
+  </data>
+  <data name="ResumePhonics" xml:space="preserve">
+    <value>Resume phonics</value>
+  </data>
+  <data name="MenuItemCompletedScreener" xml:space="preserve">
+    <value>Completed Screeners</value>
+  </data>
+  <data name="NoCompletedScreenersMessage" xml:space="preserve">
+    <value>No completed screeners</value>
+  </data>
+  <data name="PageTitleCompletedScreeners" xml:space="preserve">
+    <value>Completed Screeners</value>
+  </data>
+  <data name="CourseRecommendation" xml:space="preserve">
+    <value>Course Recommendation</value>
+  </data>
+  <data name="DownloadScreenerReport" xml:space="preserve">
+    <value>Download screener</value>
+  </data>
+  <data name="PageTitleScreenerPage" xml:space="preserve">
+    <value>Screener view</value>
+  </data>
+  <data name="ScreenerPage" xml:space="preserve">
+    <value>Screener page</value>
+  </data>
+  <data name="Student" xml:space="preserve">
+    <value>Student</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DownloadComplete" xml:space="preserve">
+    <value>Download complete</value>
+  </data>
+  <data name="DownloadingFile" xml:space="preserve">
+    <value>Downloading file...</value>
+  </data>
+  <data name="Comprehension" xml:space="preserve">
+    <value>Comprehension</value>
+  </data>
+  <data name="Congratulations" xml:space="preserve">
+    <value>Congratulations!</value>
+  </data>
+  <data name="FinishedOralMessage" xml:space="preserve">
+    <value>You have finished the introductory oral section of the screener progress</value>
+  </data>
+  <data name="StudentInfo" xml:space="preserve">
+    <value>Student Info</value>
+  </data>
+  <data name="NextSteps" xml:space="preserve">
+    <value>Click the save button below or tap the 'retry' button from the top right to start again!</value>
+  </data>
+  <data name="Oral" xml:space="preserve">
+    <value>Oral</value>
+  </data>
+  <data name="Phonics" xml:space="preserve">
+    <value>Phonics</value>
+  </data>
+  <data name="Undo" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="FinishedPhonicsMessage" xml:space="preserve">
+    <value>You have finished the longest and most difficult section of the screener process, phonics</value>
+  </data>
+  <data name="CannotComplete" xml:space="preserve">
+    <value>Cannot complete anymore</value>
+  </data>
+  <data name="FewMoreDetails" xml:space="preserve">
+    <value>We need a few more details</value>
+  </data>
+  <data name="FinishedComprehensionMessage" xml:space="preserve">
+    <value>You have finished the comprehension section of the screener process</value>
+  </data>
+</root>

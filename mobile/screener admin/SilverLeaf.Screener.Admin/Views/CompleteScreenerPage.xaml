@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SilverLeaf.Screener.Admin.Views.CompleteScreenerPage"
+             Title="{Binding Resources[PageTitleCompleteScreener]}"
+             BackgroundImageSource="{Binding BackgroundImage}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="0,10,0,0">
+                <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+                    <Label TextColor="{StaticResource HeaderTextColor}" 
+                           Style="{StaticResource HeaderFontSizeTitle}"
+                           Text="{Binding Resources[FewMoreDetails]}"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+                    <Label TextColor="{StaticResource HeaderTextColor}" 
+                           Style="{StaticResource HeaderFontSizeDefault}"
+                           Text="{Binding Resources[AreasOfStrength]}"/>
+                    <Editor Text="{Binding CompleteScreenerRequest.AreasOfStrength}"
+                            HeightRequest="70" />
+                    <Label TextColor="{StaticResource HeaderTextColor}" 
+                           Style="{StaticResource HeaderFontSizeDefault}"
+                           Text="{Binding Resources[AreasForImprovement]}"/>
+                    <Editor Text="{Binding CompleteScreenerRequest.AreasForImprovement}"
+                            HeightRequest="70" />
+                    <Label TextColor="{StaticResource HeaderTextColor}" 
+                           Style="{StaticResource HeaderFontSizeDefault}"
+                           Text="{Binding Resources[ExtraInformationGained]}"/>
+                    <Editor Text="{Binding CompleteScreenerRequest.ExtraInformationGained}"
+                            HeightRequest="70" />
+                </StackLayout>
+                <StackLayout VerticalOptions="End"
+                             Padding="20">
+                    <Button Text="{Binding Resources[GetCourseSuggestion]}" 
+                        Command="{Binding GetCourseRecommendationCommand}"
+                        BackgroundColor="{StaticResource Primary}"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

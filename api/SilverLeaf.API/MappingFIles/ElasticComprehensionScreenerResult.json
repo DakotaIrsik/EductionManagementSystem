@@ -1,0 +1,94 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "lowercase_keyword": {
+          "tokenizer": "keyword",
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "Assessor": {
+        "type": "text"
+      },
+      "Course": {
+        "type": "text"
+      },
+      "CreateDate": {
+        "type": "date"
+      },
+      "CreatedBy": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        },
+        "Id": {
+          "type": "integer"
+        },
+        "IsActive": {
+          "type": "keyword"
+        },
+        "Order": {
+          "type": "integer"
+        },
+        "Preface": {
+          "type": "text",
+          "analyzer": "lowercase_keyword",
+          "fielddata": true
+        },
+        "SecondPreface": {
+          "type": "text",
+          "analyzer": "lowercase_keyword",
+          "fielddata": true
+        },
+        "Image": {
+          "type": "text",
+          "analyzer": "lowercase_keyword",
+          "fielddata": true
+        },
+        "SecondImage": {
+          "type": "text",
+          "analyzer": "lowercase_keyword",
+          "fielddata": true
+        },
+        "Question": {
+          "type": "text",
+          "analyzer": "lowercase_keyword",
+          "fielddata": true
+        },
+        "Answers": {
+          "type": "text",
+          "analyzer": "lowercase_keyword",
+          "fielddata": true
+        },
+        "CorrectAnswer": {
+          "type": "text",
+          "analyzer": "lowercase_keyword",
+          "fielddata": true
+        },
+        "IsCorrect": {
+          "type": "boolean"
+        },
+        "UpdateDate": {
+          "type": "date"
+        },
+        "UpdatedBy": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+  }
+}

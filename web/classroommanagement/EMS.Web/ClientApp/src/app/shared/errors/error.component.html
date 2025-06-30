@@ -1,0 +1,48 @@
+<div *ngIf='httpStatusCode' class="justify-content-center text-center">
+  <h1 class="light xxl">{{httpStatusCode}}</h1>
+  <h2 class="light xl">{{userFriendlyHeader}}</h2>
+  <p class="light">{{userFriendlyDetails}}</p>
+</div>
+<div class="text-center">
+  <button *ngIf='httpStatusCode' mdbBtn color="primary" class="waves-light" type="button" (click)="openModal(254)"
+    mdbWavesEffect>Submit
+    Error</button>
+  <button *ngIf='!production && httpStatusCode' mdbBtn color="primary" class="waves-light" type="button"
+    (click)="serverErrorDetails.toggle()" mdbWavesEffect>Show Error Details</button>
+</div>
+<div mdbCollapse #serverErrorDetails="bs-collapse">
+  <ng-scrollbar class="xs">
+    <div class="col-md-12">
+      <div *ngFor="let item of errorService.error | keyvalue">
+        <div *ngIf="!isObject(item.value); then thenBlock else elseBlock"></div>
+        <ng-template #thenBlock>
+          <div class="row">
+            <div class='col-md-3 light xs'>{{item.key}}</div>
+            <div class='col-md-9 light xs'>{{item.value}}</div>
+          </div>
+        </ng-template>
+        <ng-template #elseBlock>
+          <div *ngFor="let item of item.value | keyvalue">
+            <div *ngIf="!isObject(item.value); then thenBlock else elseBlock"></div>
+            <ng-template #thenBlock>
+              <div class="row">
+                <div class='col-md-3 light xs'>{{item.key}}</div>
+                <div class='col-md-9 light xs'>{{item.value}}</div>
+              </div>
+            </ng-template>
+            <ng-template #elseBlock>
+              <div *ngFor="let item of item.value | keyvalue">
+                <div *ngIf="!isObject(item.value)">
+                  <div class="row">
+                    <div class='col-md-3 light xs'>{{item.key}}</div>
+                    <div class='col-md-9 light xs'>{{item.value}}</div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </ng-scrollbar>
+</div>

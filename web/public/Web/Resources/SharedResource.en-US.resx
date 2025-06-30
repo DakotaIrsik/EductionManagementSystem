@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MenuItemHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="MenuItemOurServices" xml:space="preserve">
+    <value>Our Services</value>
+  </data>
+  <data name="MenuItemPrivacyPolicy" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="MenuItemContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="PrivacyAddress1" xml:space="preserve">
+    <value>214 Hidden Oaks DR</value>
+  </data>
+  <data name="PrivacyAddress2" xml:space="preserve">
+    <value>Jacksonville, NC 28546</value>
+  </data>
+  <data name="PrivacyContentLiability1" xml:space="preserve">
+    <value>We shall have no responsibility or liability for any content appearing on your Web site. You agree to indemnify and defend us against all claims arising out of or based upon your Website. No link(s) may appear on any page on your Web site or within any context containing content or materials that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</value>
+  </data>
+  <data name="PrivacyContentLiabilityTitle" xml:space="preserve">
+    <value>Content Liability</value>
+  </data>
+  <data name="PrivacyCookies1" xml:space="preserve">
+    <value>We employ the use of cookies. By using SilverLeaf School's website you consent to the use of cookies in accordance with SilverLeaf School's privacy policy.</value>
+  </data>
+  <data name="PrivacyCookies2" xml:space="preserve">
+    <value>Most of the modern day interactive web sites use cookies to enable us to retrieve user details for each visit. Cookies are used in some areas of our site to enable the functionality of this area and ease of use for those people visiting. Some of our affiliate / advertising partners may also use cookies.</value>
+  </data>
+  <data name="PrivacyCookiesTitle" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="PrivacyDataCollection1" xml:space="preserve">
+    <value>We collect the names, ages, and grades of potential students to better assist in course recommendations. Additionally we may collect e-mail addresses, phone numbers, and allow login from third party applications (like Facebook or WeChat)</value>
+  </data>
+  <data name="PrivacyDataCollection2" xml:space="preserve">
+    <value>We will never share our collected data with third parties without your direct written or electronic consent.</value>
+  </data>
+  <data name="PrivacyDataCollectionTitle" xml:space="preserve">
+    <value>Data Collection</value>
+  </data>
+  <data name="PrivacyDisclaimer1" xml:space="preserve">
+    <value>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website (including, without limitation, any warranties implied by law in respect of satisfactory quality, fitness for purpose and/or the use of reasonable care and skill). Nothing in this disclaimer will:</value>
+  </data>
+  <data name="PrivacyDisclaimer2" xml:space="preserve">
+    <value>limit or exclude our or your liability for death or personal injury resulting from negligence;</value>
+  </data>
+  <data name="PrivacyDisclaimer3" xml:space="preserve">
+    <value>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</value>
+  </data>
+  <data name="PrivacyDisclaimer4" xml:space="preserve">
+    <value>limit any of our or your liabilities in any way that is not permitted under applicable law; or</value>
+  </data>
+  <data name="PrivacyDisclaimer5" xml:space="preserve">
+    <value>exclude any of our or your liabilities that may not be excluded under applicable law.</value>
+  </data>
+  <data name="PrivacyDisclaimer6" xml:space="preserve">
+    <value>The limitations and exclusions of liability set out in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer or in relation to the subject matter of this disclaimer, including liabilities arising in contract, in tort (including negligence) and for breach of statutory duty.</value>
+  </data>
+  <data name="PrivacyDisclaimer7" xml:space="preserve">
+    <value>To the extent that the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</value>
+  </data>
+  <data name="PrivacyDisclaimerTitle" xml:space="preserve">
+    <value>Disclaimer</value>
+  </data>
+  <data name="PrivacyHyperlinking1" xml:space="preserve">
+    <value>The following organizations may link to our Web site without prior written approval:</value>
+  </data>
+  <data name="PrivacyHyperlinking10" xml:space="preserve">
+    <value>associations or other groups representing charities, including charity giving sites</value>
+  </data>
+  <data name="PrivacyHyperlinking11" xml:space="preserve">
+    <value>online directory distributors</value>
+  </data>
+  <data name="PrivacyHyperlinking12" xml:space="preserve">
+    <value>internet portals</value>
+  </data>
+  <data name="PrivacyHyperlinking13" xml:space="preserve">
+    <value>educational institutions and trade associations</value>
+  </data>
+  <data name="PrivacyHyperlinking14" xml:space="preserve">
+    <value>We will approve link requests from these organizations if we determine that: (a) the link would not reflect unfavorably on us or our accredited businesses (for example, trade associations or other organizations representing inherently suspect types of business, such as work-at-home opportunities, shall not be allowed to link); (b)the organization does not have an unsatisfactory record with us; (c) the benefit to us from the visibility associated with the hyperlink outweighs the absence of SilverLeaf; and (d) where the link is in the context of general resource information or is otherwise consistent with editorial content in a newsletter or similar product furthering the mission of the organization.</value>
+  </data>
+  <data name="PrivacyHyperlinking15" xml:space="preserve">
+    <value>These organizations may link to our home page, to publications or to other Web site information so long as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and it products or services; and (c) fits within the context of the linking party's site.</value>
+  </data>
+  <data name="PrivacyHyperlinking16" xml:space="preserve">
+    <value>If you are among the organizations listed in paragraph 2 above and are interested in linking to our website, you must notify us by sending an e-mail to &lt;a href="mailto:admin@silverleafschool.com" title="send an email to admin@silverleafschool.com"&gt;admin@silverleafschool.com&lt;/a&gt;. Please include your name, your organization name, contact information (such as a phone number and/or e-mail address) as well as the URL of your site, a list of any URLs from which you intend to link to our Web site, and a list of the URL(s) on our site to which you would like to link. Allow 2-3 weeks for a response.</value>
+  </data>
+  <data name="PrivacyHyperlinking17" xml:space="preserve">
+    <value>Approved organizations may hyperlink to our Web site as follows:</value>
+  </data>
+  <data name="PrivacyHyperlinking18" xml:space="preserve">
+    <value>By use of our corporate name; or</value>
+  </data>
+  <data name="PrivacyHyperlinking19" xml:space="preserve">
+    <value>By use of the uniform resource locator (Web address) being linked to; or</value>
+  </data>
+  <data name="PrivacyHyperlinking2" xml:space="preserve">
+    <value>Government agencies</value>
+  </data>
+  <data name="PrivacyHyperlinking20" xml:space="preserve">
+    <value>By use of any other description of our Web site or material being linked to that makes sense within the context and format of content on the linking party's site.</value>
+  </data>
+  <data name="PrivacyHyperlinking21" xml:space="preserve">
+    <value>No use of SilverLeaf School's logo or other artwork will be allowed for linking absent a trademark license agreement.</value>
+  </data>
+  <data name="PrivacyHyperlinking3" xml:space="preserve">
+    <value>Search engines</value>
+  </data>
+  <data name="PrivacyHyperlinking4" xml:space="preserve">
+    <value>News organizations</value>
+  </data>
+  <data name="PrivacyHyperlinking5" xml:space="preserve">
+    <value>Online directory distributors when they list us in the directory may link to our Web site in the same manner as they hyperlink to the Web sites of other listed businesses</value>
+  </data>
+  <data name="PrivacyHyperlinking6" xml:space="preserve">
+    <value>Systemwide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.</value>
+  </data>
+  <data name="PrivacyHyperlinking7" xml:space="preserve">
+    <value>These organizations may link to our home page, to publications or to other Web site information so long as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.</value>
+  </data>
+  <data name="PrivacyHyperlinking8" xml:space="preserve">
+    <value>We may consider and approve in our sole discretion other link requests from the following types of organizations:</value>
+  </data>
+  <data name="PrivacyHyperlinking9" xml:space="preserve">
+    <value>dot.com community sites</value>
+  </data>
+  <data name="PrivacyHyperlinkingTitle" xml:space="preserve">
+    <value>Hyperlinking to our Content</value>
+  </data>
+  <data name="PrivacyIframes1" xml:space="preserve">
+    <value>Without prior approval and express written permission, you may not create frames around our Web pages or use other techniques that alter in any way the visual presentation or appearance of our Web site.</value>
+  </data>
+  <data name="PrivacyIframesTitle" xml:space="preserve">
+    <value>Iframes</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>These terms and conditions outline the rules and regulations for the use of SilverLeaf School's Website.</value>
+  </data>
+  <data name="PrivacyIntro2" xml:space="preserve">
+    <value>SilverLeaf School is located at:</value>
+  </data>
+  <data name="PrivacyLicense1" xml:space="preserve">
+    <value>Unless otherwise stated, SilverLeaf School and/or it's licensors own the intellectual property rights for all material on SilverLeaf School. All intellectual property rights are reserved. You may view and/or print pages from https://silverleafschool.com for your own personal use subject to restrictions set in these terms and conditions.</value>
+  </data>
+  <data name="PrivacyLicense2" xml:space="preserve">
+    <value>You must not:</value>
+  </data>
+  <data name="PrivacyLicense3" xml:space="preserve">
+    <value>Republish material from https://silverleafschool.com</value>
+  </data>
+  <data name="PrivacyLicense4" xml:space="preserve">
+    <value>Sell, rent or sub-license material from https://silverleafschool.com</value>
+  </data>
+  <data name="PrivacyLicense5" xml:space="preserve">
+    <value>Reproduce, duplicate or copy material from https://silverleafschool.com</value>
+  </data>
+  <data name="PrivacyLicense6" xml:space="preserve">
+    <value>Redistribute content from SilverLeaf School (unless content is specifically made for redistribution).</value>
+  </data>
+  <data name="PrivacyLicenseTitle" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="PrivacyOverview" xml:space="preserve">
+    <value>By accessing this website we assume you accept these terms and conditions in full. Do not continue to use SilverLeaf School's website if you do not accept all of the terms and conditions stated on this page.</value>
+  </data>
+  <data name="PrivacyRemovalOfLinks1" xml:space="preserve">
+    <value>If you find any link on our Web site or any linked web site objectionable for any reason, you may contact us about this. We will consider requests to remove links but will have no obligation to do so or to respond directly to you.</value>
+  </data>
+  <data name="PrivacyRemovalOfLinks2" xml:space="preserve">
+    <value>Whilst we endeavour to ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we commit to ensuring that the website remains available or that the material on the website is kept up to date.</value>
+  </data>
+  <data name="PrivacyRemovalOfLinksTitle" xml:space="preserve">
+    <value>Removal of links from our website</value>
+  </data>
+  <data name="PrivacyReservationOfRights1" xml:space="preserve">
+    <value>We reserve the right at any time and in its sole discretion to request that you remove all links or any particular link to our Web site. You agree to immediately remove all links to our Web site upon such request. We also reserve the right to amend these terms and conditions and its linking policy at any time. By continuing to link to our Web site, you agree to be bound to and abide by these linking terms and conditions.</value>
+  </data>
+  <data name="PrivacyReservationOfRightsTitle" xml:space="preserve">
+    <value>Reservation of Rights</value>
+  </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Welcome to SilverLeaf School!</value>
+  </data>
+  <data name="PrivacyVerbiage" xml:space="preserve">
+    <value>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and any or all Agreements: "Client", "You" and "Your" refers to you, the person accessing this website and accepting the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves, or either the Client or ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner, whether by formal meetings of a fixed duration, or any other means, for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services/products, in accordance with and subject to, prevailing law. Any use of the above terminology or other words in the singular, plural, capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.</value>
+  </data>
+  <data name="MenuItemAdministration" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="PageTitleContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="PageTitleHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="PageTitleOurServices" xml:space="preserve">
+    <value>Our Services</value>
+  </data>
+  <data name="PageTitlePrivacyPolicy" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="ButtonSubmit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="LabelContactSubmission" xml:space="preserve">
+    <value>Thank you, someone will contact you soon</value>
+  </data>
+  <data name="LabelContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="LabelDescription" xml:space="preserve">
+    <value>What can we help you with?</value>
+  </data>
+  <data name="LabelEmail" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="LabelFormInstructions" xml:space="preserve">
+    <value>Fill out the form below and we will contact you as soon as possible</value>
+  </data>
+  <data name="LabelImmediateAssistance" xml:space="preserve">
+    <value>For immediate assistance please add us on WeChat</value>
+  </data>
+  <data name="LabelName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="LabelPhone" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="MainGuidedReading1" xml:space="preserve">
+    <value>After our children develop a solid phonics foundation we encourage them to move on to our Guided Reading courses. These courses are based off of the US Common Core learning Standards, which means your child will do more than read words from a page. They will be asked critical thinking questions during each reading course designed to create interest in the reading material. All of the critical thinking questions stem from the 5 W's. Who, What, Where, When, Why? During these courses your child can expect to be exposed to an abundance of genre's including Fiction, Non-Fiction, Animal-Fantasy, Folk-Tales, Encyclopedia Entries and much much more.</value>
+  </data>
+  <data name="MainGuidedReading2" xml:space="preserve">
+    <value>Read more about our Guided Reading programs here.</value>
+  </data>
+  <data name="MainGuidedReadingTitle" xml:space="preserve">
+    <value>Guided Reading!</value>
+  </data>
+  <data name="MainLearningOutcomes1" xml:space="preserve">
+    <value>It's no longer sufficient to pay a large amount of money for your child to 'learn' English and at the end of the day have nothing to show for it. Our trademarked technology allows you, the parent, to be constantly updated on your child's progress so there are no surprises when examination time comes. Recent studies have shown that only 30% of education comes from the educational environment. The other 70% comes from their home life and their time spent with their friends. At the end of each class you will receive a notification, via our in-house engineered android / iOS mobile app, or an email that shows what exactly your child learned that day as well as some simple excercises you can do at home to help re-inforce your child's learning.</value>
+  </data>
+  <data name="MainLearningOutcomesTitle" xml:space="preserve">
+    <value>Learning Transparency!</value>
+  </data>
+  <data name="MainPhonicsFirst1" xml:space="preserve">
+    <value>Phonics are the building blocks of learning English. Starting with memorizing each letter in fun and engaging ways. Then we work on digraphs - combining letters to make very common sounds in the english language. From there we work on what we call CVC words, or Consonant-Vowel-Consonant words like dog, cat, mom, dad, etc. Eventually we move on to the more intricate sections of the English language including the "Silent E" words that end wit the letter E but the letter itself isn't spoken. Trigraphs, homonyms, synonyms and antonyms follow as you near the end of your phonics journey. We have taken great care to prioritize these skills for ease, utility, and fun!</value>
+  </data>
+  <data name="MainPhonicsFirst2" xml:space="preserve">
+    <value>Read more about our Phonics programs here</value>
+  </data>
+  <data name="MainPhonicsFirstTitle" xml:space="preserve">
+    <value>Phonics First!</value>
+  </data>
+  <data name="MainTitle" xml:space="preserve">
+    <value>At SilverLeaf we believe that data is powerful</value>
+  </data>
+  <data name="PageTitleMessageReceived" xml:space="preserve">
+    <value>Message received</value>
+  </data>
+  <data name="AgreementAgree" xml:space="preserve">
+    <value>Agree</value>
+  </data>
+  <data name="AgreementDisagree" xml:space="preserve">
+    <value>Disagree</value>
+  </data>
+  <data name="AgreementPartiallyAgree" xml:space="preserve">
+    <value>Partially Agree</value>
+  </data>
+  <data name="AgreementStronglyAgree" xml:space="preserve">
+    <value>Strongly Agree</value>
+  </data>
+  <data name="ChildMostEnjoyed" xml:space="preserve">
+    <value>What did you and your child like most about the demo class?</value>
+  </data>
+  <data name="ChildParticipationSatisfaction" xml:space="preserve">
+    <value>How satisfied was your child after participating in the demo class?</value>
+  </data>
+  <data name="ParentalSatisfaction" xml:space="preserve">
+    <value>How satisfied are you with the demo class?</value>
+  </data>
+  <data name="SatisfactionAverage" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="SatisfactionSatisfied" xml:space="preserve">
+    <value>Satisfied</value>
+  </data>
+  <data name="SatisfactionUnsatisfied" xml:space="preserve">
+    <value>Unsatisfied</value>
+  </data>
+  <data name="SatisfactionVerySatisfied" xml:space="preserve">
+    <value>Very Satisfied</value>
+  </data>
+  <data name="SatisfactionWithArrangements" xml:space="preserve">
+    <value>How satisfied are you with the overall arrangements today?</value>
+  </data>
+  <data name="SatisfactionWithPreDemoCommunication" xml:space="preserve">
+    <value>How satisfied are you with the pre-demo communication?</value>
+  </data>
+  <data name="TeacherEngagedWithYourChild" xml:space="preserve">
+    <value>Do you think the teacher was engaged with your child?</value>
+  </data>
+  <data name="TeacherPoliteAndRespectful" xml:space="preserve">
+    <value>Do you think the teacher was polite and respectful?</value>
+  </data>
+  <data name="TeacherProfessionallyDressed" xml:space="preserve">
+    <value>Do you think the teacher dressed professionally and appropriately?</value>
+  </data>
+  <data name="WhatCouldWeDoBetter" xml:space="preserve">
+    <value>What could we do better?</value>
+  </data>
+  <data name="LabelDemoFeedback" xml:space="preserve">
+    <value>Please submit feedback for the Demo</value>
+  </data>
+  <data name="LabelDemoFeedbackIntro" xml:space="preserve">
+    <value>Fill out the form below and we will carefully consider your suggestions</value>
+  </data>
+  <data name="LabelDemoFeedbackReceived" xml:space="preserve">
+    <value>We have received your demo feedback and will work to improve our demo process</value>
+  </data>
+  <data name="LabelStudentName" xml:space="preserve">
+    <value>Student Name</value>
+  </data>
+  <data name="MenuItemDemoFeedback" xml:space="preserve">
+    <value>Demo Feedback</value>
+  </data>
+  <data name="PageTitleDemoFeedbackReceived" xml:space="preserve">
+    <value>Demo feedback received</value>
+  </data>
+  <data name="WhatDidYourChildLikeBestAboutTheDemo" xml:space="preserve">
+    <value>What did your child like most about the demo class?</value>
+  </data>
+  <data name="MenuItemPhonics" xml:space="preserve">
+    <value>Phonics</value>
+  </data>
+  <data name="PageTitlePhonics" xml:space="preserve">
+    <value>Phonics</value>
+  </data>
+  <data name="Phonics1CourseStructure" xml:space="preserve">
+    <value>Phonics 1 Course Structure</value>
+  </data>
+  <data name="Phonics1Unit1Structure" xml:space="preserve">
+    <value>Phonics 1 Unit 1 Course Structure</value>
+  </data>
+  <data name="Phonics1Unit2Structure" xml:space="preserve">
+    <value>Phonics 1 Unit 2 Course Structure</value>
+  </data>
+  <data name="Phonics1Unit3Structure" xml:space="preserve">
+    <value>Phonics 1 Unit 3 Course Structure</value>
+  </data>
+  <data name="Phonics1Unit4Structure" xml:space="preserve">
+    <value>Phonics 1 Unit 4 Course Structure</value>
+  </data>
+  <data name="Phonics1Unit5Structure" xml:space="preserve">
+    <value>Phonics 1 Unit 5 Course Structure</value>
+  </data>
+  <data name="Phonics1Unit6Structure" xml:space="preserve">
+    <value>Phonics 1 Unit 6 Course Structure</value>
+  </data>
+  <data name="Phonics1Unit7Structure" xml:space="preserve">
+    <value>Phonics 1 Unit 7 Course Structure</value>
+  </data>
+  <data name="Phonics1Unit8Structure" xml:space="preserve">
+    <value>Phonics 1 Unit 8 Course Structure</value>
+  </data>
+  <data name="PhonicsCourse" xml:space="preserve">
+    <value>Phonics Course</value>
+  </data>
+  <data name="PhonicsCourseDescription" xml:space="preserve">
+    <value>Phonics Course Description</value>
+  </data>
+</root>

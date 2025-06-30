@@ -1,0 +1,122 @@
+﻿[
+  {
+    "Order": 1,
+    "": "",
+    "Name": "ABC Names",
+    "zhName": "",
+    "Description": "The nemes given to each english letter",
+    "zhDescription": ""
+  },
+  {
+    "Order": 2,
+    "": "",
+    "Name": "CVC Blending",
+    "zhName": "",
+    "Description": "The blending of Consonant -> Vowel -> Consonant Word (ex: mom, cat, dad)",
+    "zhDescription": ""
+  },
+  {
+    "Order": 3,
+    "": "",
+    "Name": "Sight Words",
+    "zhName": "",
+    "Description": "Words that Comprise the majority of Frys' words",
+    "zhDescription": ""
+  },
+  {
+    "Order": 4,
+    "": "",
+    "Name": "Short Vowel Word Families",
+    "zhName": "",
+    "Description": "Words that have a common short vowel sound. Words like this create a family",
+    "zhDescription": ""
+  },
+  {
+    "Order": 5,
+    "": "",
+    "Name": "Long Vowels",
+    "zhName": "",
+    "Description": "Words that have a common long vowel sound. Words like this create a family",
+    "zhDescription": ""
+  },
+  {
+    "Order": 6,
+    "": "",
+    "Name": "Magic E",
+    "zhName": "",
+    "Description": "The magic E rule states when the letter \"e\" sits at the end of the word, it is usually silent and the \"magical\" E tells the first vowel or the preceding vowel to say its name or long sound.",
+    "zhDescription": ""
+  },
+  {
+    "Order": 7,
+    "": "",
+    "Name": "Consonant Digraphs",
+    "zhName": "",
+    "Description": "Consonant digraphs are two (or three) letters that come together to make one sound.",
+    "zhDescription": ""
+  },
+  {
+    "Order": 8,
+    "": "",
+    "Name": "Final Blends",
+    "zhName": "",
+    "Description": "Attending to final blends helps students decode words that end with sk, sp, st, mp, nd, nk, nt, ld, lf, lk, lp, lt, ct, ft, or pt.",
+    "zhDescription": ""
+  },
+  {
+    "Order": 9,
+    "": "",
+    "Name": "Soft Letters",
+    "zhName": "",
+    "Description": "A letter can have multiple sounds depending on the word; cap/cell, Usually a consonant that follow a vowel: Consider the following: When a G meets an a,o,u, it's sound it hard. When a G meats an a, o, or, u, then it sounds hard.",
+    "zhDescription": ""
+  },
+  {
+    "Order": 10,
+    "": "",
+    "Name": "Silent Letters",
+    "zhName": "",
+    "Description": "Silet letters can often appear at the beginning or end of a word; (Know, Knack, Knuckle - The K is silenct) (Muscle, Scene - the E is silent)",
+    "zhDescription": ""
+  },
+  {
+    "Order": 11,
+    "": "",
+    "Name": "Diphthongs",
+    "zhName": "",
+    "Description": "diphthong is a vowel in which there is a noticeable sound change within the same syllable",
+    "zhDescription": ""
+  },
+  {
+    "Order": 12,
+    "": "",
+    "Name": "Vowel Diagraphs",
+    "zhName": "",
+    "Description": "Vowel digraphs are combination of vowels that combine to make a single vowel sound like the OA in boat, the AI in rain, the EE in feet, the EA in sea, and the OO in moon.",
+    "zhDescription": ""
+  },
+  {
+    "Order": 13,
+    "": "",
+    "Name": "Short Vowels",
+    "zhName": "",
+    "Description": "Short vowels are vowel sounds that are pronounced in a short form. In English the short vowel sounds are those in 'pet', 'pot', 'put', 'putt', 'pat' and 'pit'",
+    "zhDescription": ""
+  },
+  {
+    "Order": 14,
+    "": "",
+    "Name": "Long Vowels",
+    "zhName": "",
+    "Description": "A long vowel is a vowel sound that is pronounced the same way as the name of the letter itself. For example, the long U sound is pronounced like \"yoo,\" as would be the case in words like \"lure\" and \"tube.",
+    "zhDescription": ""
+  },
+  {
+    "Order": 15,
+    "": "",
+    "Name": "R Control",
+    "zhName": "",
+    "Description": "Controlled R words are exactly that, words that are controlled by the letter R. Controlled R words are words like: “Bar, Car, Far, Hard, Lard, Tar, and Star.” In these words the “Ar” produces the sound of the Letter Named \"R.\"",
+    "zhDescription": ""
+  }
+]

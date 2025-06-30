@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SilverLeaf.Screener.Admin.Views.PendingScreenersPage"
+             Title="{Binding Resources[PageTitlePendingScreeners]}"
+             BackgroundImageSource="{Binding BackgroundImage}">
+    <StackLayout>
+        <Label Text="{Binding Resources[NoPendingStudentScreenersMessage]}"
+               TextColor="{StaticResource Primary}" 
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="CenterAndExpand"
+               IsVisible="{Binding HasNoResults}" 
+               Style="{StaticResource HeaderFontSizeTitle}"/>
+        <ListView SeparatorVisibility="None"
+                  BackgroundColor="Transparent"
+                  SeparatorColor="{StaticResource White}"
+                  IsVisible="{Binding HasResults}" 
+                  ItemsSource="{Binding Results.Data}"
+                  HasUnevenRows="True"
+                  SelectedItem="{Binding Selected}" 
+                  Footer="">
+            <ListView.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.27*" />
+                        <ColumnDefinition Width="0.19*" />
+                        <ColumnDefinition Width="0.27*" />
+                        <ColumnDefinition Width="0.27*" />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Column="0" 
+                                     Padding="5,0,0,0"
+                                     Orientation="Horizontal" 
+                                     HorizontalOptions="StartAndExpand">
+                        <Label Text="{Binding Resources[StudentInfo]}" 
+                                   FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" 
+                                     Orientation="Vertical" 
+                                     HorizontalOptions="CenterAndExpand">
+                        <Label FontSize="Small" 
+                                   Text="{Binding Resources[Oral]}" 
+                                   FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout Grid.Column="2" 
+                                     Orientation="Vertical" 
+                                     HorizontalOptions="CenterAndExpand">
+                        <Label FontSize="Small" 
+                                   Text="{Binding Resources[Phonics]}"
+                                   FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout Grid.Column="3" 
+                                     Orientation="Vertical" 
+                                     HorizontalOptions="CenterAndExpand">
+                        <Label FontSize="Small" 
+                                   Text="{Binding Resources[Comprehension]}" 
+                                   FontAttributes="Bold" />
+                    </StackLayout>
+                </Grid>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,20,0,20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.27*" />
+                                <ColumnDefinition Width="0.19*" />
+                                <ColumnDefinition Width="0.27*" />
+                                <ColumnDefinition Width="0.27*" />
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Grid.Column="0" 
+                                             Orientation="Horizontal" 
+                                             HorizontalOptions="StartAndExpand" 
+                                             VerticalOptions="CenterAndExpand">
+                                <Label Text="{Binding NativeName}" />
+                                <Label Text="{Binding EnglishName}" />
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" 
+                                             Orientation="Horizontal"  
+                                             HorizontalOptions="CenterAndExpand" 
+                                             VerticalOptions="CenterAndExpand">
+                                <Label Text="{Binding OralScreenerCompletionPercentage}" />
+                                <Label Text="%" />
+                            </StackLayout>
+                            <StackLayout Grid.Column="2" 
+                                             Orientation="Horizontal"  
+                                             HorizontalOptions="CenterAndExpand" 
+                                             VerticalOptions="CenterAndExpand">
+                                <Label Text="{Binding PhonicsScreenerCompletionPercentage}" />
+                                <Label Text="%" />
+                            </StackLayout>
+                            <StackLayout Grid.Column="3" 
+                                             Orientation="Horizontal" 
+                                             HorizontalOptions="CenterAndExpand" 
+                                             VerticalOptions="CenterAndExpand">
+                                <Label Text="{Binding ComprehensionScreenerCompletionPercentage}" />
+                                <Label Text="%" />
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+      
+        <StackLayout Orientation="Vertical" 
+                     Padding="20">
+            <Label Text="{Binding Resources[SelectStudentLabel]}" 
+                   Padding="0, 50" 
+                   HorizontalOptions="CenterAndExpand" 
+                   HorizontalTextAlignment="Center"
+                   IsVisible="{Binding ShouldSelect}" 
+                   TextColor="{StaticResource Primary}"
+                   Style="{StaticResource HeaderFontSizeLarge}"/>
+            <Button IsVisible="{Binding IsOralScreenerIncomplete}" 
+                        Text="{Binding Resources[ResumeOral]}" 
+                        TextColor="{StaticResource Black}"
+                        Command="{Binding ResumeOralScreenerCommand}"
+                        BackgroundColor="{StaticResource Primary}" />
+            <Button IsVisible="{Binding IsPhonicsScreenerIncomplete}" 
+                        Text="{Binding Resources[ResumePhonics]}"
+                        TextColor="{StaticResource Black}"
+                        Command="{Binding ResumePhonicsScreenerCommand}"
+                        BackgroundColor="{StaticResource Primary}" />
+            <Button IsVisible="{Binding IsComprehensionScreenerIncomplete}" 
+                        Text="{Binding Resources[ResumeComprehension]}" 
+                        TextColor="{StaticResource Black}"
+                        Command="{Binding ResumeComprehensionScreenerCommand}"
+                        BackgroundColor="{StaticResource Primary}" />
+            <Button IsVisible="{Binding IsScreenerComplete}" 
+                        Text="{Binding Resources[CompleteScreener]}"
+                        TextColor="{StaticResource Black}"
+                        Command="{Binding FinishScreenerCommand}"
+                        BackgroundColor="{StaticResource Primary}" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

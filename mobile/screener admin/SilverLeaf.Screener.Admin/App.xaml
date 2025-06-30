@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:SilverLeaf.Screener.Admin.Converters;assembly=SilverLeaf.Screener.Admin"
+             x:Class="SilverLeaf.Screener.Admin.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Color x:Key="Primary">#4EAEA9</Color>
+            <Color x:Key="ButtonBackground">#D7D6D7</Color>
+            <Color x:Key="ButtonText">#383638</Color>
+            <Color x:Key="PrimaryDark">#002E51</Color>
+            <Color x:Key="Accent">#D34D1E</Color>
+            <Color x:Key="LighterBackgroundColor">#FAFAFA</Color>
+            <Color x:Key="LightBackgroundColor">#999999</Color>
+            <Color x:Key="DarkBackgroundColor">#C0C0C0</Color>
+            <Color x:Key="DarkerBackgroundColor">#9b9b9b</Color>
+            <Color x:Key="DarkestBackgroundColor">#636363</Color>
+            <Color x:Key="MediumGrayTextColor">#4d4d4d</Color>
+            <Color x:Key="DisabledButtonBackgroundColor">#C0C0C0</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+            <Color x:Key="DarkestTextColor">#0d0d0d</Color>
+            <Color x:Key="White">#ffffff</Color>
+            <Color x:Key="Black">#000000</Color>
+            <Color x:Key="Red">#990000</Color>
+            <Color x:Key="Green">#009900</Color>
+            <Color x:Key="WhiteSmoke">#F5F5F5</Color>
+            <Color x:Key="SuccessButton">#90EE90</Color>
+            <Color x:Key="CautionButton">#FAFAD2</Color>
+            <Color x:Key="HeaderTextColor">#4EAEA9</Color>
+
+            <Style x:Key="HeaderFontSizeTitle" TargetType="Label">
+                <Setter Property="FontSize" Value="Title" />
+            </Style>
+
+            <Style x:Key="HeaderFontSizeLarge" TargetType="Label">
+                <Setter Property="FontSize" Value="Large" />
+            </Style>
+
+            <Style x:Key="HeaderFontSizeDefault" TargetType="Label">
+                <Setter Property="FontSize" Value="Default" />
+            </Style>
+
+            <Style x:Key="LabelFontSizeSmall" TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
+            </Style>
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+
+            <Style x:Key="DividerLine" TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="{StaticResource WhiteSmoke}" />
+                <Setter Property="HeightRequest" Value="2" />
+            </Style>
+
+            <Style x:Key="ListDividerLine" TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="{StaticResource DarkBackgroundColor}" />
+                <Setter Property="HeightRequest" Value="1" />
+            </Style>
+
+            <Style x:Key="FormLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="TextColor" Value="{StaticResource Primary}" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            
+            <converters:NotConverter x:Key="NotConverter"></converters:NotConverter>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

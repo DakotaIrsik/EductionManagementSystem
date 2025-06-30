@@ -1,0 +1,160 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "lowercase_keyword": {
+          "tokenizer": "keyword",
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "Card": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "AllDocuments": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "Classwork": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "Course": {
+        "properties": {
+          "CreateDate": { "type": "date" },
+          "CreatedBy": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "Id": { "type": "integer" },
+          "IsActive": { "type": "boolean" },
+          "Name": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "UpdateDate": { "type": "date" },
+          "UpdatedBy": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "UserId": { "type": "keyword" }
+        }
+      },
+      "CourseId": { "type": "integer" },
+      "CreateDate": { "type": "date" },
+      "CreatedBy": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "Fictionality": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "Genre": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "Homework": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "Flipchart": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "Id": { "type": "integer" },
+      "IsActive": { "type": "keyword" },
+      "Lesson": { "type": "integer" },
+      "LessonPlan": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "Phonics": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "Session": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "TargetReadingSkill": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "Title": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "UpdateDate": { "type": "date" },
+      "UpdatedBy": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "UserId": { "type": "keyword" },
+      "Week": { "type": "integer" }
+    }
+  }
+}

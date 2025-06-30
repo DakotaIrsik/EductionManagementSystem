@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            Title="{Binding Resources[Menu]}" Icon="slideout.png"
+            x:Class="SilverLeaf.Screener.Admin.Views.HomePageMaster">
+    <StackLayout>
+        <ActivityIndicator IsVisible="{Binding Parent.IsBusy}"
+                           IsRunning="{Binding Parent.IsBusy}"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand" />
+        <ListView x:Name="ListViewMenuItems" 
+                  BackgroundColor="{StaticResource White}"
+                  Margin="0,0,1,0"
+                  HasUnevenRows="true"
+                  SeparatorVisibility="None"
+                  ItemsSource="{Binding MenuItems}"
+                  SeparatorColor="{StaticResource White}"
+                  SelectedItem="{Binding SelectedMenuItem}"
+                  IsVisible="{Binding Parent.IsBusy, Converter={StaticResource NotConverter}}">
+            <ListView.Header>
+                <StackLayout BackgroundColor="{StaticResource Primary}"
+                             Padding="25">
+                    <Label
+                        Text="{Binding User.UserName}"
+                        HorizontalTextAlignment="End"
+                        TextColor="White"
+                        Style="{DynamicResource SubtitleStyle}" />
+                </StackLayout>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <StackLayout Padding="15" Orientation="Horizontal" >
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Image Grid.Row="0" 
+                                           Grid.Column="0" 
+                                           Grid.RowSpan="2" 
+                                           Grid.ColumnSpan="2" 
+                                           Source="{Binding ImageResourceLocation}" 
+                                           Opacity="0.5" 
+                                           HeightRequest="35" 
+                                           WidthRequest="35" />
+                                </Grid>
+                                <Label VerticalOptions="FillAndExpand" TextColor="{StaticResource Primary}"
+                                   VerticalTextAlignment="Center"
+                                   Text="{Binding MenuText}"
+                                   FontSize="18" />
+                            </StackLayout>
+                            <StackLayout>
+                                <BoxView Style="{StaticResource ListDividerLine}" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,254 @@
+/* ---------------------------------------------------
+    DEMO STYLE
+----------------------------------------------------- */
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+
+
+/* ---------------------------------------------------
+    NAVBAR
+----------------------------------------------------- */
+
+.navbar {
+  padding: 15px 10px;
+  background-color: #374A67;
+  border: none;
+  border-radius: 0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+
+
+/* ---------------------------------------------------
+    CONTENT
+----------------------------------------------------- */
+main {
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  background-image: url('assets/img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+}
+
+.light {
+  color: #fff;
+}
+
+.xxl {
+  font-size: 10em;
+}
+
+.xl {
+  font-size: 3em;
+}
+
+.xs {
+  font-size: .8em;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+
+
+
+/* ---------------------------------------------------
+    PAGINATION
+----------------------------------------------------- */
+.ngx-pagination ul {
+  padding-inline-start: 0px !important;
+}
+
+.ngx-pagination a,
+.ngx-pagination button {
+  color: white !important;
+}
+
+.ngx-pagination a:hover,
+.ngx-pagination button:hover {
+  background-color: #2198e87c !important;
+  height: 100% !important;
+}
+
+.ngx-pagination li {
+  height: 100% !important;
+}
+
+.ngx-pagination a,
+.ngx-pagination a:hover,
+.ngx-pagination a:focus {
+  transition: none !important;
+}
+
+
+
+pagination-controls {
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #1C2331;
+  color: white;
+}
+
+
+/* ---------------------------------------------------
+    CARD
+----------------------------------------------------- */
+
+mdb-card {
+  padding-bottom: 20px;
+}
+
+
+/* ---------------------------------------------------
+    SCROLLBAR
+----------------------------------------------------- */
+
+ng-scrollbar-y {
+  --scrollbar-color: transparent;
+  --scrollbar-container-color: transparent;
+  --scrollbar-thumb-color: rgba(245, 245, 245, 0.52);
+  --scrollbar-thumb-hover-color: rgba(245, 245, 245, 0.719);
+  --scrollbar-border-radius: 4px;
+  --scrollbar-size: 6px;
+  --scrollbar-padding: 0;
+  --scroll-view-margin: 0;
+}
+
+.darker ng-scrollbar-y {
+  --scrollbar-thumb-color: rgba(46, 45, 45, 0.431);
+  --scrollbar-thumb-hover-color: rgba(46, 45, 45, 0.719);
+}
+
+ng-scrollbar.lg {
+  max-height: 900px;
+  margin-top: 10px;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+ng-scrollbar.md {
+  max-height: 750px;
+  margin-top: 25px;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+ng-scrollbar.sm {
+  max-height: 600px;
+  margin-top: 50px;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+ng-scrollbar.xs {
+  max-height: 400px;
+  margin-top: 75px;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+
+/* .svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  color: rgba(245, 245, 245, 0.9);
+  overflow: visible;
+  vertical-align: -.125em;
+  margin-top: 15px;
+} */
+
+
+/* ---------------------------------------------------
+    SELECT
+----------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------
+    FORM
+----------------------------------------------------- */
+form {
+  background-color: white;
+  padding: 50px;
+}
+
+
+/* ---------------------------------------------------
+    Tabulator
+----------------------------------------------------- */
+.tabulator {
+   font-size: 12px;
+   border: none;
+}
+
+.tabulator .tabulator-header {
+   font-weight: normal;
+   border-bottom: 1px solid;
+   border-bottom-color: rgba(0, 0, 0, 0.12);
+   color: rgba(0, 0, 0, 0.54);
+}
+
+.tabulator .tabulator-header .tabulator-col {
+   height: 48px;
+   background-color: #ffffff;
+   border: none;
+   padding: 0 7px;
+}
+
+.tabulator-row {
+   border-bottom: 1px solid;
+   border-bottom-color: rgba(0, 0, 0, 0.12);
+   min-height: 48px;
+   vertical-align: middle;
+}
+
+.tabulator-row .tabulator-cell {
+   padding: 16px 7px;
+   border-right: none;
+   vertical-align: middle;
+}
+
+.tabulator-row .tabulator-cell:first-of-type,
+.tabulator .tabulator-header .tabulator-col:first-of-type {
+   padding-left: 24px;
+}
+
+.tabulator-row.tabulator-row-even {
+   background-color: #ffffff;
+}
+
+
+
+/*
+
+
+*/

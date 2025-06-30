@@ -1,0 +1,56 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "lowercase_keyword": {
+          "tokenizer": "keyword",
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "CreateDate": {
+        "type": "date"
+      },
+      "CreatedBy": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "Id": {
+        "type": "long"
+      },
+      "IsActive": {
+        "type": "boolean"
+      },
+      "Name": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "OccupancyMaximum": {
+        "type": "long"
+      },
+      "UpdateDate": {
+        "type": "date"
+      },
+      "UpdatedBy": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      }
+    }
+  }
+}

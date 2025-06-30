@@ -1,0 +1,8 @@
+<mdb-select id="{{key}}-select"
+            [options]="selects"
+            [(ngModel)]="selectedValues" 
+            (ngModelChange)="getSelectedValues($event)"
+            [placeholder]="placeholder"
+            [multiple]="multiple"
+            (click)="metric($event.target)">
+</mdb-select>

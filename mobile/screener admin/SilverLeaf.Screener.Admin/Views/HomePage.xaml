@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="SilverLeaf.Screener.Admin.Views.HomePage"
+            xmlns:views="clr-namespace:SilverLeaf.Screener.Admin.Views;assembly=SilverLeaf.Screener.Admin">
+    <MasterDetailPage.Master>
+        <views:HomePageMaster x:Name="MasterPage" />
+    </MasterDetailPage.Master>
+</MasterDetailPage>

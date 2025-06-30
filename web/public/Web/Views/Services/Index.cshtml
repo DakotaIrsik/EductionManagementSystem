@@ -1,0 +1,44 @@
+﻿@using SilverLeaf.Public.Web.Services
+@inject LocalizationService SharedLocalizer
+@{
+    ViewData["Title"] = SharedLocalizer.GetLocalizedHtmlString("PageTitleOurServices");
+}
+
+<section id="services" class="services bg-primary text-white">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-10 mx-auto">
+                <h2>Our Services</h2>
+                <br />
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-balance-scale fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4><strong>Phonics</strong></h4>
+                            <p>Phonics 1</p>
+                            <p>Phonics 2</p>
+                            <p>Phonics 3</p>
+                            <p>Phonics 4</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-balance-scale fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4><strong>Guided Reading</strong></h4>
+                            <p>Guided Reading 1</p>
+                            <p>Guided Reading 2</p>
+                            <p>Guided Reading 3</p>
+                            <p>Guided Reading 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,80 @@
+﻿[
+  {
+    "Order":  "1",
+    "Name": "Phonics1",
+    "Description": "Course Description",
+    "IntroducedOn": "2019-10-28 00:00:00"
+  },
+  {
+    "Order": "2",
+    "Name": "Phonics2",
+    "Description": "Course Description",
+    "IntroducedOn": "2019-10-28 00:00:00"
+  },
+  {
+    "Order": "3",
+    "Name": "Phonics3",
+    "Description": "Course Description",
+    "IntroducedOn": "2019-10-28 00:00:00"
+  },
+  {
+    "Order": "4",
+    "Name": "Phonics4",
+    "Description": "Course Description",
+    "IntroducedOn": "2019-10-28 00:00:00"
+  },
+  {
+    "Order": "5",
+    "Name": "GuidedReading1",
+    "Description": "Course Description",
+    "IntroducedOn": "2019-10-28 00:00:00"
+  },
+  {
+    "Order": "6",
+    "Name": "GuidedReading2",
+    "Description": "Course Description",
+    "IntroducedOn": "2019-10-28 00:00:00"
+  },
+  {
+    "Order": "7",
+    "Name": "GuidedReading3",
+    "Description": "Course Description",
+    "IntroducedOn": "2019-10-28 00:00:00"
+  },
+  {
+    "Order": "8",
+    "Name": "Literature1",
+    "Description": "Course Description",
+    "IntroducedOn": "2019-10-28 00:00:00"
+  },
+  {
+    "Order": "9",
+    "Name": "Literature2",
+    "Description": "Course Description",
+    "IntroducedOn": "2019-10-28 00:00:00"
+  },
+  {
+    "Order": "10",
+    "Name": "Literature3",
+    "Description": "Course Description",
+    "IntroducedOn": "2019-10-28 00:00:00"
+  },
+  {
+    "Order": "11",
+    "Name": "Writing1",
+    "Description": "Course Description",
+    "IntroducedOn": "2019-10-28 00:00:00"
+  },
+  {
+    "Order": "12",
+    "Name": "Writing2",
+    "Description": "Course Description",
+    "IntroducedOn": "2019-10-28 00:00:00"
+  },
+  {
+    "Order": "13",
+    "Name": "Writing3",
+    "Description": "Course Description",
+    "IntroducedOn": "2019-10-28 00:00:00"
+  }
+]

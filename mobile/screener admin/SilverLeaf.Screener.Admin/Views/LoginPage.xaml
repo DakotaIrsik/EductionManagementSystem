@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SilverLeaf.Screener.Admin.Views.LoginPage"
+             xmlns:behaviors="clr-namespace:SilverLeaf.Screener.Admin.Views.Behaviors;assembly=SilverLeaf.Screener.Admin"
+             xmlns:converters="clr-namespace:SilverLeaf.Screener.Admin.Converters;assembly=SilverLeaf.Screener.Admin" 
+             Title="{Binding Resources[MenuItemLogin]}"
+             BackgroundImageSource="{Binding BackgroundImage}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:BooleanToObjectConverter x:Key="boolToStyleInput"  x:TypeArguments="Style">
+                <converters:BooleanToObjectConverter.FalseObject>
+                    <Style TargetType="Entry">
+                        <!--<Setter Property="BackgroundColor" Value="Red" />-->
+                    </Style>
+                </converters:BooleanToObjectConverter.FalseObject>
+            </converters:BooleanToObjectConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <StackLayout>
+        <ScrollView  VerticalOptions="StartAndExpand">
+            <StackLayout Padding="50, 25, 50, 200" VerticalOptions="StartAndExpand">
+                <StackLayout VerticalOptions="StartAndExpand">
+
+                    <StackLayout Orientation="Horizontal" Padding="0,0,0,20">
+                        <StackLayout.HeightRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="150" Tablet="200" />
+                        </StackLayout.HeightRequest>
+                    </StackLayout>
+                    <Entry 
+                    AutomationId="LoginPage_Username_Entry"
+                Text="{Binding Username}" 
+                Placeholder="{Binding Resources[Username]}"
+                Style="{Binding Source={x:Reference userNameInputValidator}, 
+                                Path=IsValid, 
+                                Converter={StaticResource boolToStyleInput}}">
+                        <Entry.Behaviors>
+                            <behaviors:InputValidatorBehavior x:Name="userNameInputValidator"/>
+                        </Entry.Behaviors>
+                    </Entry>
+                    <Entry
+                        Text="{Binding Password}"
+                        Placeholder="{Binding Resources[Password]}" 
+                        IsPassword="True" 
+                        Style="{Binding Source={x:Reference passwordInputValidator}, 
+                                Path=IsValid, 
+                                Converter={StaticResource boolToStyleInput}}">
+                        <Entry.Behaviors>
+                            <behaviors:InputValidatorBehavior x:Name="passwordInputValidator"/>
+                        </Entry.Behaviors>
+                    </Entry>
+
+
+                    <ActivityIndicator IsVisible="{Binding IsBusy}"
+                               IsRunning="{Binding IsBusy}"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand" />
+                    <Button 
+                        IsVisible="{Binding IsBusy, Converter={StaticResource NotConverter}}"
+                        Command="{Binding SignInCommand}" Text="{Binding Resources[SignIn]}" TextColor="White"
+                        BackgroundColor="{StaticResource Primary}" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

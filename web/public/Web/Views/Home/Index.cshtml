@@ -1,0 +1,52 @@
+﻿@using SilverLeaf.Public.Web.Services
+@inject LocalizationService SharedLocalizer
+
+@{
+    ViewData["Title"] = SharedLocalizer.GetLocalizedHtmlString("PageTitleHome");
+}
+
+<div class="text-center">
+    <h1 style="padding-bottom: 100px;">@SharedLocalizer.GetLocalizedHtmlString("MainTitle")</h1>
+</div>
+
+<div class="row" style="padding-bottom: 100px;">
+    <div class="col-md-7">
+        <div class="text-center">
+            <h2 style="padding-bottom: 30px;">@SharedLocalizer.GetLocalizedHtmlString("MainLearningOutcomesTitle")</h2>
+        </div>
+        <p class="indent">
+            @SharedLocalizer.GetLocalizedHtmlString("MainLearningOutcomes1")
+        </p>
+    </div>
+    <div class="col-md-5">
+        <img src="~/images/statistics.png" class="img-fluid" />
+    </div>
+</div>
+<div class="row" style="padding-bottom: 100px;">
+    <div class="col-md-5">
+        <img src="~/images/phonicsfirst.jpg" class="img-fluid" />
+    </div>
+    <div class="col-md-7">
+        <div class="text-center">
+            <h2 style="padding-bottom: 30px;">@SharedLocalizer.GetLocalizedHtmlString("MainPhonicsFirstTitle")</h2>
+        </div>
+        <p class="indent">
+            @SharedLocalizer.GetLocalizedHtmlString("MainPhonicsFirst1")
+            <a href="/Phonics">@SharedLocalizer.GetLocalizedHtmlString("MainPhonicsFirst2")</a>
+        </p>
+    </div>
+</div>
+<div class="row" style="padding-bottom: 100px;">
+    <div class="col-md-7">
+        <div class="text-center">
+            <h2 style="padding-bottom: 30px;">@SharedLocalizer.GetLocalizedHtmlString("MainGuidedReadingTitle")</h2>
+        </div>
+        <p class="indent">
+            @SharedLocalizer.GetLocalizedHtmlString("MainGuidedReading1")
+            <a href="/GuidedReading">@SharedLocalizer.GetLocalizedHtmlString("MainGuidedReading2")</a>
+        </p>
+    </div>
+    <div class="col-md-5">
+        <img src="~/images/guidedreading.jpg" class="img-fluid" />
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="content-view-md">
+        <div class="form-group row">
+          <input type="text" id="searchBox" name="searchBox"
+            placeholder="Search classes!" class="form-control" #smartSearchInput />
+        </div>
+        <div id="search-results" class="text-center">
+          <!-- <ng-scrollbar> -->
+            <div class="col-lg-12">
+              <div class="card-deck">
+                <div id="center" style="position:fixed;top:50%;left:50%">
+                  <app-spinner [spinnerName]="'newtonsCradle'"></app-spinner>
+                </div>
+                <div class="col-lg-4" *ngFor='let class of classes | paginate: { itemsPerPage: 9, currentPage: page }'>
+                  <app-class-card [class]='class'></app-class-card>
+                </div>
+              </div>
+            </div>
+          <!-- </ng-scrollbar> -->
+        </div>
+        <div class="text-center row align-items-end" style="padding-top: 10px;">
+          <pagination-controls class='pagination-controls' (pageChange)="pageChange($event)"></pagination-controls>
+        </div>
+      </div>
+      

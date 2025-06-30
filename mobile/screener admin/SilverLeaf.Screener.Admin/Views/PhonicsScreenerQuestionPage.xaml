@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SilverLeaf.Screener.Admin.Views.PhonicsScreenerQuestionPage"
+             xmlns:renderer="clr-namespace:SilverLeaf.Screener.Admin.Views.Renderers"
+             xmlns:controls="clr-namespace:SilverLeaf.Screener.Admin.Views.Controls"
+             Title="{Binding Resources[PageTitlePhonics]}"
+             BackgroundImageSource="{Binding BackgroundImage}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+                 IconImageSource="baseline_restore_white.png"
+                 Command="{Binding ResetCommand}"
+                 Order="Primary"
+                 Priority="0" />
+        <ToolbarItem
+                 IconImageSource="baseline_skip_next_white.png"
+                 Command="{Binding CannotCompleteCommand}"
+                 Order="Primary"
+                 Priority="1" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <renderer:ProgressRenderer x:Key="ProgressRenderer" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout VerticalOptions="Start">
+                <Label IsVisible="{Binding IsFinished}"
+					   Text="{Binding Resources[Congratulations]}" 
+                       Margin="0,40"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="{StaticResource HeaderTextColor}" 
+                       Style="{StaticResource HeaderFontSizeTitle}" />
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="{Binding Question.Prefix}" 
+                           IsVisible="{Binding IsNotFinished}"
+                           HorizontalOptions="CenterAndExpand" 
+                           TextColor="{StaticResource HeaderTextColor}" 
+                           Style="{StaticResource HeaderFontSizeTitle}" />
+                    <Label Text="{Binding Question.ZH_Prefix}"
+                           IsVisible="{Binding IsNotFinished}"
+                           HorizontalOptions="CenterAndExpand" 
+                           TextColor="{StaticResource HeaderTextColor}" 
+                           Style="{StaticResource HeaderFontSizeLarge}" />
+                    <Label Text="{Binding Question.Test}" 
+                           IsVisible="{Binding IsNotFinished}"
+                           HorizontalOptions="CenterAndExpand" 
+                           Margin="0,160,0,0"
+                           Style="{StaticResource HeaderFontSizeTitle}"
+                           TextColor="{StaticResource Black}" />
+                    <Label Text="{Binding Resources[FinishedPhonicsMessage]}" 
+					       IsVisible="{Binding IsFinished}"
+                           HorizontalTextAlignment="Center" 
+                           TextColor="{StaticResource HeaderTextColor}" 
+                           Style="{StaticResource HeaderFontSizeDefault}" />
+                    <Label Text="{Binding Resources[NextSteps]}" 
+					       IsVisible="{Binding IsFinished}"
+                           Margin="0,40"
+                           HorizontalTextAlignment="Center" 
+                           TextColor="{StaticResource Black}" 
+                           Style="{StaticResource LabelFontSizeSmall}" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="CenterAndExpand"
+                             Margin="0,130,0,0">
+                    <Button Text="{Binding Resources[Issue]}" 
+                        BackgroundColor="{StaticResource CautionButton}" 
+                        Command="{Binding CautionCommand}" 
+                        Padding="10" 
+                        BorderColor="Black" 
+                        IsVisible="{Binding IsNotFinished}"/>
+                    <Button Text="{Binding Resources[Success]}" 
+                        BackgroundColor="{StaticResource Primary}" 
+                        Command="{Binding SuccessCommand}" 
+                        Padding="10" 
+                        BorderColor="Black" 
+                        IsVisible="{Binding IsNotFinished}" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout VerticalOptions="End"
+                         Padding="20">
+                <controls:SkiaRenderView x:Name="Canvas" 
+                                         IsVisible="{Binding IsNotFinished}"
+                                         Renderer="{Binding Renderer}" />
+                <Button Text="{Binding Resources[Save]}" 
+						IsVisible="{Binding IsFinished}"
+                        BackgroundColor="{StaticResource Primary}" 
+                        Command="{Binding SaveCommand}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

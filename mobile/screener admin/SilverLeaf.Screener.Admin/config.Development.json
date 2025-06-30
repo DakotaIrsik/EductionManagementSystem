@@ -1,0 +1,75 @@
+{
+  "Environment": "Development",
+  "Apis": [
+    {
+      "Name": "PhonicsScreener",
+      "BaseUrl": "http://192.168.132.110:5000",
+      "Headers": [
+        {
+          "Key": "API-Token",
+          "Value": "3602a81c526347c68c9b091e20067e06"
+        }
+      ]
+    },
+    {
+      "Name": "OralScreener",
+      "BaseUrl": "http://192.168.132.110:5000",
+      "Headers": [
+        {
+          "Key": "API-Token",
+          "Value": "3602a81c526347c68c9b091e20067e06"
+        }
+      ]
+    },
+    {
+      "Name": "PendingScreener",
+      "BaseUrl": "http://192.168.132.110:5000",
+      "Headers": [
+        {
+          "Key": "API-Token",
+          "Value": "3602a81c526347c68c9b091e20067e06"
+        }
+      ]
+    },
+    {
+      "Name": "ComprehensionScreener",
+      "BaseUrl": "http://192.168.132.110:5000",
+      "Headers": [
+        {
+          "Key": "API-Token",
+          "Value": "3602a81c526347c68c9b091e20067e06"
+        }
+      ]
+    },
+    {
+      "Name": "User",
+      "BaseUrl": "http://192.168.132.110:5000",
+      "Headers": [
+        {
+          "Key": "API-Token",
+          "Value": "3602a81c526347c68c9b091e20067e06"
+        }
+      ]
+    },
+    {
+      "Name": "CompletionScreener",
+      "BaseUrl": "http://192.168.132.110:5000",
+      "Headers": [
+        {
+          "Key": "API-Token",
+          "Value": "3602a81c526347c68c9b091e20067e06"
+        }
+      ]
+    },
+    {
+      "Name": "Student",
+      "BaseUrl": "http://192.168.132.110:5000",
+      "Headers": [
+        {
+          "Key": "API-Token",
+          "Value": "3602a81c526347c68c9b091e20067e06"
+        }
+      ]
+    }
+  ]
+}

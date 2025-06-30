@@ -1,0 +1,3 @@
+[submodule "SoundSesh.Common"]
+	path = SoundSesh.Common
+	url = https://celestialmediagroupllc.com/tfs/CelestialMedia/SoundSesh/_git/SoundSesh.Common

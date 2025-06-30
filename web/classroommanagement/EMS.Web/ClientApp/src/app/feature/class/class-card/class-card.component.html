@@ -1,0 +1,38 @@
+<mdb-card cascade="true" wider="true">
+  <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+    <!-- <mdb-card-img [src]="class.defaultprofileimage" alt="Card image cap"></mdb-card-img> -->
+    <a [routerLink]="['/class/', class.Id]">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+  <mdb-card-body cascade="true" class="text-center">
+    <h4 class="card-title">
+      <strong>{{class.Title}}</strong>
+    </h4>
+    <h5 class="indigo-text">
+      <strong>Lesson {{class.Lesson}} - Week {{class.Week}} - Session {{class.Session}}</strong>
+    </h5>
+    <mdb-card-text>
+      <div *ngIf="class.Fictionality !== ''">
+        {{class.Fictionality}}<br />
+      </div>
+      <div *ngIf="class.Genre !== ''">
+        {{class.Genre}}<br />
+      </div>
+      <div *ngIf="class.TargetReadingSkill !== ''">
+        {{class.TargetReadingSkill}}<br />
+      </div>
+      <div *ngIf="class.Phonics !== ''">
+        Phonics {{class.Phonics}}
+      </div>
+    </mdb-card-text>
+    <mdb-card-text>
+      <a href="{{class.Classwork}}" target='_blank'>Classwork</a><br />
+      <a href="{{class.Homework}}" target='_blank'>Homework</a><br />
+      <a href="{{class.LessonPlan}}" target='_blank'>Lesson Plan</a><br />
+      <a href="{{class.Material}}" target='_blank'>Card Scan</a><br />
+      <a href="{{class.Flipchart}}" target='_blank'>ActivInspire Flipchart</a><br />
+      <a href="{{class.AllDocuments}}" target='_blank'>Download All Material</a><br />
+    </mdb-card-text>
+  </mdb-card-body>
+</mdb-card>

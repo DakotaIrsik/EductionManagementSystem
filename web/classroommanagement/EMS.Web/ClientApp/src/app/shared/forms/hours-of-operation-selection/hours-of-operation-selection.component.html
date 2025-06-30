@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-4 my-auto">
+    <label>{{day}}</label>
+  </div>
+  <div class="col-md-2 my-auto">
+    <mdb-checkbox [checked]='open' (change)="openTodayChanged($event)"></mdb-checkbox>
+  </div>
+  <div class="col-md-3">
+    <mdb-time-picker [disabled]='!open' [buttonLabel]="'Done'" [twelvehour]="true" [darktheme]="true"
+      [placeholder]="'Open'" (timeChanged)="startTimeChanged($event)" [ngModel]="start"></mdb-time-picker>
+  </div>
+  <div class="col-md-3">
+    <mdb-time-picker [disabled]='!open' [buttonLabel]="'Done'" [twelvehour]="true" [darktheme]="true"
+      [placeholder]="'Close'" (timeChanged)="endTimeChanged($event)" [ngModel]="end"></mdb-time-picker>
+  </div>
+</div>
+
+<div *ngFor="let error of errors">
+  <div *ngIf='open' class="alert alert-danger" role="alert">
+    {{error}}
+  </div>
+</div>

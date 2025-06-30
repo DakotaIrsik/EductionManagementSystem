@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SilverLeaf.Screener.Admin.Views.ScreenerRegistrationPage"
+             xmlns:behaviors="clr-namespace:SilverLeaf.Screener.Admin.Views.Behaviors;assembly=SilverLeaf.Screener.Admin"
+             xmlns:converters="clr-namespace:SilverLeaf.Screener.Admin.Converters;assembly=SilverLeaf.Screener.Admin"
+             BackgroundColor="{StaticResource White}"
+             Title="{Binding Resources[PageTitleScreenerRegistration]}"
+             BackgroundImageSource="{Binding BackgroundImage}">
+
+    <ContentPage.Resources>
+    <ResourceDictionary>
+        <converters:BooleanToObjectConverter x:Key="boolToStyleInput"  x:TypeArguments="Style">
+            <converters:BooleanToObjectConverter.FalseObject>
+                <Style TargetType="Entry">
+                    <!--<Setter Property="BackgroundColor" Value="Red" />-->
+                </Style>
+            </converters:BooleanToObjectConverter.FalseObject>
+        </converters:BooleanToObjectConverter>
+    </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <RelativeLayout>
+            <StackLayout RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
+                <ActivityIndicator IsVisible="{Binding IsBusy}"
+                   IsRunning="True"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand" />
+                <StackLayout IsVisible="{Binding IsBusy, Converter={StaticResource NotConverter}}" VerticalOptions="FillAndExpand">
+                    <StackLayout VerticalOptions="StartAndExpand">
+                        <StackLayout Padding="10" Spacing="5">
+                            <Label Text="{Binding TitleDisplayMesage}" FontSize="20" TextColor="{StaticResource Primary}" FontAttributes="Bold" />
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="3*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto" />
+                                    <RowDefinition Height="auto" />
+                                    <RowDefinition Height="auto" />
+                                    <RowDefinition Height="auto" />
+                                    <RowDefinition Height="auto" />
+                                </Grid.RowDefinitions>
+                                <Label VerticalTextAlignment="Center" Text="{Binding Resources[Age]}" Style="{StaticResource FormLabel}" Grid.Column="0" Grid.Row="0" />
+                                <Picker VerticalOptions="Center" ItemsSource="{Binding Ages}" SelectedItem="{Binding Age}" Grid.Column="1" Grid.Row="0" />
+                                <Label VerticalTextAlignment="Center" Text="{Binding Resources[Grade]}" Style="{StaticResource FormLabel}" Grid.Column="0" Grid.Row="1" />
+                                <Picker VerticalOptions="Center" ItemsSource="{Binding Grades}" SelectedItem="{Binding Grade}" Grid.Column="1" Grid.Row="1" />
+                                <Label VerticalTextAlignment="Center" Text="{Binding Resources[EnglishName]}" Style="{StaticResource FormLabel}" Grid.Column="0" Grid.Row="2" />
+                                <Entry Text="{Binding EnglishName}" Placeholder="{Binding Resources[EnglishName]}" Grid.Column="1" Grid.Row="2" Style="{Binding Source={x:Reference userNameInputValidator}, Path=IsValid, Converter={StaticResource boolToStyleInput}}">
+                                    <Entry.Behaviors>
+                                        <behaviors:InputValidatorBehavior x:Name="userNameInputValidator"/>
+                                    </Entry.Behaviors>
+                                </Entry>
+                                <Label VerticalTextAlignment="Center" Text="{Binding Resources[Assessor]}" Style="{StaticResource FormLabel}" Grid.Column="0" Grid.Row="3" />
+                                <Entry Text="{Binding Assessor}" Placeholder="{Binding Resources[Assessor]}" Grid.Column="1" Grid.Row="3" Style="{Binding Source={x:Reference userNameInputValidator}, Path=IsValid, Converter={StaticResource boolToStyleInput}}">
+                                </Entry>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="EndAndExpand">
+                        <StackLayout Orientation="Horizontal" Padding="5, 0" Spacing="5">
+                            <Button HorizontalOptions="FillAndExpand" Command="{Binding ResetCommand}"  Text="{Binding Resources[Reset]}" TextColor="Black" BackgroundColor="{StaticResource DarkBackgroundColor}" ></Button>
+                            <Button HorizontalOptions="FillAndExpand" Command="{Binding SubmitCommand}" IsEnabled="{Binding CanSubmit}" Text="{Binding Resources[Submit]}" TextColor="{Binding SearchButtonTextColor}" BackgroundColor="{Binding SearchButtonBackgroundColor}" ></Button>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

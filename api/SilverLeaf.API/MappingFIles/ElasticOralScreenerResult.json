@@ -1,0 +1,66 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "lowercase_keyword": {
+          "tokenizer": "keyword",
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "CreateDate": {
+        "type": "date"
+      },
+      "CreatedBy": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "Id": {
+        "type": "integer"
+      },
+      "IsActive": {
+        "type": "keyword"
+      },
+      "Order": {
+        "type": "integer"
+      },
+      "Image": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "Question": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "ZH_Question": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "UpdateDate": {
+        "type": "date"
+      },
+      "UpdatedBy": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      }
+    }
+  }
+}

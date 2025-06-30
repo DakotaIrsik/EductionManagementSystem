@@ -1,0 +1,117 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "lowercase_keyword": {
+          "tokenizer": "keyword",
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "Assessor": {
+        "type": "text"
+      },
+      "CourseId": {
+        "type": "integer"
+      },
+      "Course": {
+        "properties": {
+          "CreateDate": { "type": "date" },
+          "CreatedBy": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "Id": { "type": "integer" },
+          "IsActive": { "type": "boolean" },
+          "Name": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "UpdateDate": { "type": "date" },
+          "UpdatedBy": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "UserId": { "type": "keyword" }
+        }
+      },
+      "CreateDate": {
+        "type": "date"
+      },
+      "CreatedBy": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "Id": {
+        "type": "integer"
+      },
+      "IsActive": {
+        "type": "keyword"
+      },
+      "IsCorrect": {
+        "type": "boolean"
+      },
+      "Order": {
+        "type": "integer"
+      },
+      "Prefix": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "ZH_Prefix": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "StudentId": {
+        "type": "integer"
+      },
+      "Task": {
+        "type": "integer"
+      },
+      "Test": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "UpdateDate": {
+        "type": "date"
+      },
+      "UpdatedBy": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      }
+    }
+  }
+}

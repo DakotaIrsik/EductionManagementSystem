@@ -1,0 +1,71 @@
+﻿
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.workArea
+{
+	border-color: aquamarine;
+	text-align: center;
+	background-color : darkseagreen;
+	position: relative;
+}
+
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+    background-image: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #74a4bc;
+}
+
+.page-footer {
+    bottom: 0;
+    background-color: #74a4bc;
+    width: auto;
+}
+
+footer.page-footer p {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 2px;
+}
+
+.footer-copyright {
+    overflow: hidden;
+    background-color: #124559;
+}
+
+
+#shell-background {
+    padding: 40px;
+}
+
+.indent {
+    text-indent: 50px;
+}

@@ -1,0 +1,6 @@
+<div *ngFor="let hoo of hoursOfOperation">
+  <div *ngIf="hoo.isOpen">
+      <div>{{hoo.dayOfWeek}}</div> 
+      <div>{{hoo.open}} - {{hoo.close}}</div>
+  </div>
+</div>

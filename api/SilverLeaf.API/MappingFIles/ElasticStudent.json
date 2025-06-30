@@ -1,0 +1,114 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "lowercase_keyword": {
+          "tokenizer": "keyword",
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "Address1": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "Address2": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "City": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "CreateDate": {
+        "type": "date"
+      },
+      "CreatedBy": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "Email": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "EnglishName": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "NativeName": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "Grade": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "Id": {
+        "type": "integer"
+      },
+      "Age": {
+        "type": "integer"
+      },
+      "IsActive": {
+        "type": "keyword"
+      },
+      "IsPhonicsScreenerComplete": {
+        "type": "boolean"
+      },
+      "IsBeginnerOralScreenerComplete": {
+        "type": "boolean"
+      },
+      "IsComprehensionScreenerComplete": {
+        "type": "boolean"
+      },
+      "IsStarReadingTestComplete": {
+        "type": "boolean"
+      },
+      "PhoneNumber": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "State": {
+        "type": "text",
+        "analyzer": "lowercase_keyword",
+        "fielddata": true
+      },
+      "UpdateDate": {
+        "type": "date"
+      },
+      "UpdatedBy": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "UserId": {
+        "type": "keyword"
+      },
+      "ZipCode": {
+        "type": "text"
+      }
+    }
+  }
+}

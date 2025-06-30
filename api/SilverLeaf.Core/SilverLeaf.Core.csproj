@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AssemblyName>SilverLeaf.Core</AssemblyName>
+    <RootNamespace>SilverLeaf.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="PDFSharp.Standard" Version="1.51.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SilverLeaf.Common\SilverLeaf.Common.csproj" />
+    <ProjectReference Include="..\SilverLeaf.Entities\SilverLeaf.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

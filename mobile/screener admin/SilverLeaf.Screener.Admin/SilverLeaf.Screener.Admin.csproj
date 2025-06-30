@@ -1,0 +1,191 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\Images\Animals\**" />
+    <EmbeddedResource Remove="Resources\Images\Animals\**" />
+    <None Remove="Resources\Images\Animals\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="config.Development.json" />
+    <None Remove="config.Production.json" />
+    <None Remove="Resources\Images\apple.png" />
+    <None Remove="Resources\Images\backgroundimage.png" />
+    <None Remove="Resources\Images\banana.png" />
+    <None Remove="Resources\Images\bicycle.png" />
+    <None Remove="Resources\Images\book.png" />
+    <None Remove="Resources\Images\crayon.png" />
+    <None Remove="Resources\Images\duckdogcat.png" />
+    <None Remove="Resources\Images\eight.png" />
+    <None Remove="Resources\Images\elephant.png" />
+    <None Remove="Resources\Images\four.png" />
+    <None Remove="Resources\Images\frog.png" />
+    <None Remove="Resources\Images\grape.png" />
+    <None Remove="Resources\Images\hen.png" />
+    <None Remove="Resources\Images\hippo.png" />
+    <None Remove="Resources\Images\orange.png" />
+    <None Remove="Resources\Images\pencil.png" />
+    <None Remove="Resources\Images\plane.png" />
+    <None Remove="Resources\Images\school bus.png" />
+    <None Remove="Resources\Images\sheep.png" />
+    <None Remove="Resources\Images\six.png" />
+    <None Remove="Resources\Images\train.png" />
+    <None Remove="Resources\Images\twelve.png" />
+    <None Remove="Resources\Images\watermelon.png" />
+    <None Remove="Resources\Images\zebra.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="config.Development.json" />
+    <EmbeddedResource Include="config.Production.json" />
+    <EmbeddedResource Include="Resources\Images\apple.png" />
+    <EmbeddedResource Include="Resources\Images\backgroundimage.png" />
+    <EmbeddedResource Include="Resources\Images\banana.png" />
+    <EmbeddedResource Include="Resources\Images\bicycle.png" />
+    <EmbeddedResource Include="Resources\Images\book.png" />
+    <EmbeddedResource Include="Resources\Images\crayon.png" />
+    <EmbeddedResource Include="Resources\Images\duckdogcat.png" />
+    <EmbeddedResource Include="Resources\Images\eight.png" />
+    <EmbeddedResource Include="Resources\Images\elephant.png" />
+    <EmbeddedResource Include="Resources\Images\four.png" />
+    <EmbeddedResource Include="Resources\Images\frog.png" />
+    <EmbeddedResource Include="Resources\Images\grape.png" />
+    <EmbeddedResource Include="Resources\Images\hen.png" />
+    <EmbeddedResource Include="Resources\Images\hippo.png" />
+    <EmbeddedResource Include="Resources\Images\orange.png" />
+    <EmbeddedResource Include="Resources\Images\pencil.png" />
+    <EmbeddedResource Include="Resources\Images\plane.png" />
+    <EmbeddedResource Include="Resources\Images\school bus.png" />
+    <EmbeddedResource Include="Resources\Images\sheep.png" />
+    <EmbeddedResource Include="Resources\Images\six.png" />
+    <EmbeddedResource Include="Resources\Images\train.png" />
+    <EmbeddedResource Include="Resources\Images\twelve.png" />
+    <EmbeddedResource Include="Resources\Images\watermelon.png" />
+    <EmbeddedResource Include="Resources\Images\zebra.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.35" />
+    <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.6.1" />
+    <PackageReference Include="PdfSharp.Xamarin.Forms" Version="1.0.0" />
+    <PackageReference Include="refit" Version="5.0.23" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.0" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.3" />
+    <PackageReference Include="Xam.Plugin.Connectivity" Version="3.2.0" />
+    <PackageReference Include="Xam.Plugins.DownloadManager" Version="1.4.0" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.991221" />  
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\api\SilverLeaf.Common\SilverLeaf.Common.csproj" />
+    <ProjectReference Include="..\..\..\api\SilverLeaf.Entities\SilverLeaf.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Lang.zh.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Lang.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lang.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ScreenerRegistrationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PhonicsScreenerQuestionPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Lang.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Lang.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ComprehensionScreenerQuestionPage.xaml.cs">
+      <DependentUpon>ComprehensionScreenerQuestionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ScreenerPage.xaml.cs">
+      <DependentUpon>ScreenerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\CompleteScreenerPage.xaml.cs">
+      <DependentUpon>CompleteScreenerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\CompletedScreenersPage.xaml.cs">
+      <DependentUpon>CompletedScreenersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PendingScreenersPage.xaml.cs">
+      <DependentUpon>PendingScreenersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\HomePageMaster.xaml.cs">
+      <DependentUpon>HomePageMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\OralScreenerQuestionPage.xaml.cs">
+      <DependentUpon>OralScreenerQuestionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PhonicsScreenerQuestionPage.xaml.cs">
+      <DependentUpon>PhonicsScreenerQuestionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ScreenerRegistrationPage.xaml.cs">
+      <DependentUpon>ScreenerRegistrationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\AboutPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\HomePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\HomePageMaster.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\ItemDetailPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\ItemsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\LoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\NewItemPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\NewScreenerPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\ResumeScreenerPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\SettingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>

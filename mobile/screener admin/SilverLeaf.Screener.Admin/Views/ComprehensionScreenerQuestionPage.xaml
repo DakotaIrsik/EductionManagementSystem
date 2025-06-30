@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SilverLeaf.Screener.Admin.Views.ComprehensionScreenerQuestionPage"
+             xmlns:renderer="clr-namespace:SilverLeaf.Screener.Admin.Views.Renderers"
+             xmlns:controls="clr-namespace:SilverLeaf.Screener.Admin.Views.Controls"
+             Title="{Binding Resources[PageTitleComprehension]}"
+             BackgroundImageSource="{Binding BackgroundImage}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+                 IconImageSource="baseline_restore_white.png"
+                 Command="{Binding ResetCommand}"
+                 Order="Primary"
+                 Priority="0" />
+        <ToolbarItem
+                 IconImageSource="baseline_skip_next_white.png"
+                 Command="{Binding CannotCompleteCommand}"
+                 Order="Primary"
+                 Priority="1" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <renderer:ProgressRenderer x:Key="ProgressRenderer" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout VerticalOptions="Start">
+                <Label Text="{Binding Question.Question}" 
+                        HorizontalOptions="CenterAndExpand" 
+                        Padding="20"
+                        HorizontalTextAlignment="Center"
+                        TextColor="{StaticResource HeaderTextColor}" 
+                        Style="{StaticResource HeaderFontSizeTitle}"
+                        IsVisible="{Binding IsNotFinished}" />
+                <CarouselView ItemsSource="{Binding QuestionSections}"
+                              HorizontalOptions="CenterAndExpand"
+                              IsVisible="{Binding IsNotFinished}">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Image Source="{Binding LocalImage}"
+                                       HeightRequest="300" />
+                                <Label Text="{Binding Preface}" 
+                                       HorizontalOptions="CenterAndExpand"
+                                       HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <Label IsVisible="{Binding IsFinished}"
+				       Text="{Binding Resources[Congratulations]}" 
+                       Margin="0,40"
+                       HorizontalTextAlignment="Center" 
+                       TextColor="{StaticResource HeaderTextColor}" 
+                       Style="{StaticResource HeaderFontSizeTitle}" />
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="{Binding Resources[Issue]}" 
+                            BackgroundColor="{StaticResource CautionButton}" 
+                            Command="{Binding CautionCommand}" 
+                            Padding="10" 
+                            BorderColor="Black" 
+                            IsVisible="{Binding IsNotFinished}"/>
+                    <Button Text="{Binding Resources[Success]}" 
+                            BackgroundColor="{StaticResource Primary}" 
+                            Command="{Binding SuccessCommand}" 
+                            Padding="10" 
+                            BorderColor="Black" 
+                            IsVisible="{Binding IsNotFinished}" />
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="{Binding Resources[FinishedComprehensionMessage]}" 
+					       IsVisible="{Binding IsFinished}"
+                           HorizontalTextAlignment="Center" 
+                           TextColor="{StaticResource HeaderTextColor}" 
+                           Style="{StaticResource HeaderFontSizeDefault}" />
+                    <Label Text="{Binding Resources[NextSteps]}" 
+					       IsVisible="{Binding IsFinished}"
+                           Margin="0,40"
+                           HorizontalTextAlignment="Center" 
+                           TextColor="{StaticResource Black}" 
+                           Style="{StaticResource LabelFontSizeSmall}" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout VerticalOptions="End"
+                             Padding="20">
+                <controls:SkiaRenderView x:Name="Canvas" 
+                                             IsVisible="{Binding IsNotFinished}"
+                                             Renderer="{Binding Renderer}" />
+                <Button Text="{Binding Resources[Save]}" 
+						    IsVisible="{Binding IsFinished}"
+                            BackgroundColor="{StaticResource Primary}" 
+                            Command="{Binding SaveCommand}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,88 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">×</span>
+    </button>
+    <h5 class="modal-title w-100" id="myModalLabel">Sorry - This feature doesn't currently exist</h5>
+  </div>
+  <div class="modal-body">
+    <p>How important is this feature?</p>
+    <div class="btn-group">
+      <label mdbBtn color="primary" [(ngModel)]="importance" mdbRadio="Not Very" mdbWavesEffect>
+        Not very
+      </label>
+      <label mdbBtn color="primary" [(ngModel)]="importance" mdbRadio="Nice to have" mdbWavesEffect>
+        Nice to have
+      </label>
+      <label mdbBtn color="primary" [(ngModel)]="importance" mdbRadio="Required" mdbWavesEffect>
+        Required
+      </label>
+    </div>
+
+    <div *ngIf="importance != 'Not Very'">
+      <p>Would you be willing to pay for this stand-alone feature?</p>
+      <div class="btn-group">
+        <label mdbBtn color="primary" [(ngModel)]="willingToPayForFeature" mdbRadio="No" mdbWavesEffect>
+          No
+        </label>
+        <label mdbBtn color="primary" [(ngModel)]="willingToPayForFeature" mdbRadio="Yes" mdbWavesEffect>
+          Yes
+        </label>
+      </div>
+      <div *ngIf="willingToPayForFeature === 'Yes'">
+        <p>How much?</p>
+        <div class="btn-group">
+          <label mdbBtn color="primary" [(ngModel)]="willingToPayForFeatureAmount" mdbRadio="$1" mdbWavesEffect>
+            $1
+          </label>
+          <label mdbBtn color="primary" [(ngModel)]="willingToPayForFeatureAmount" mdbRadio="$2" mdbWavesEffect>
+            $2
+          </label>
+          <label mdbBtn color="primary" [(ngModel)]="willingToPayForFeatureAmount" mdbRadio="$5" mdbWavesEffect>
+            $5
+          </label>
+          <label mdbBtn color="primary" [(ngModel)]="willingToPayForFeatureAmount" mdbRadio="Unsure" mdbWavesEffect>
+            Not sure
+          </label>
+        </div>
+      </div>
+
+      <p>Would you be willing to pay a monthly subscription if this and other features were included?</p>
+      <div class="btn-group">
+        <label mdbBtn color="primary" [(ngModel)]="willingToPayForSubscription" mdbRadio="No" mdbWavesEffect>
+          No
+        </label>
+        <label mdbBtn color="primary" [(ngModel)]="willingToPayForSubscription" mdbRadio="Yes" mdbWavesEffect>
+          Yes
+        </label>
+      </div>
+      <div *ngIf="willingToPayForSubscription === 'Yes'">
+        <p>How much would you be willing to pay monthly?</p>
+        <div class="btn-group">
+          <label mdbBtn color="primary" [(ngModel)]="willingToPayForSubscriptionAmount" mdbRadio="$1" mdbWavesEffect>
+            $1
+          </label>
+          <label mdbBtn color="primary" [(ngModel)]="willingToPayForSubscriptionAmount" mdbRadio="$5" mdbWavesEffect>
+            $5
+          </label>
+          <label mdbBtn color="primary" [(ngModel)]="willingToPayForSubscriptionAmount" mdbRadio="$15" mdbWavesEffect>
+            $15
+          </label>
+          <label mdbBtn color="primary" [(ngModel)]="willingToPayForSubscriptionAmount" mdbRadio="Not Sure"
+            mdbWavesEffect>
+            Not sure
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="md-form">
+        <textarea type="text" id="feedback" [(ngModel)]="comments" class="md-textarea form-control" mdbInput></textarea>
+        <label for="feedback">Please give us any additional feeback.</label>
+      </div>
+  <div class="modal-footer">
+    <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="modalRef.hide()"
+      mdbWavesEffect>Close</button>
+    <button type="button" mdbBtn color="primary" class="relative waves-light" (click)="submitFeedback()" mdbWavesEffect>Submit Feedback</button>
+  </div>
+</div>
